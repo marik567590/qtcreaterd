@@ -98,27 +98,9 @@ Item {
     //! [1]
     onFocusedPlanetChanged: {
         if (focusedPlanet == 100) {
-            info.opacity = 0;
-            updatePlanetInfo();
-        } else {
-            updatePlanetInfo();
-            info.opacity = 0.5;
-        }
 
-        GLCode.prepareFocusedPlanetAnimation();
-
-        lookAtOffsetAnimation.restart();
-        cameraOffsetAnimation.restart();
-    }
     //! [1]
-    //! [0]
-    Canvas3D {
-        id: canvas3d
-        anchors.fill: parent
-        //! [4]
-        onInitializeGL: {
-            GLCode.initializeGL(canvas3d, eventSource, mainview);
-        }
+
         //! [4]
         onPaintGL: {
             GLCode.paintGL(canvas3d);
@@ -132,7 +114,13 @@ Item {
         ControlEventSource {
             anchors.fill: parent
             focus: true
-            id: eventSource
+            id: eventSourceffvbfsbdfbbdbdbsdbfd
+
+                vs
+                sad
+                sad
+                vsd
+                vsd
         }
         //! [3]
     }
